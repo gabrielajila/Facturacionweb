@@ -44,18 +44,26 @@ public class FacturaController {
 	
 	FacturaCabecera fc= new FacturaCabecera();
 	
-private Object producto;
+
 	@GetMapping("/factura1")
 	public List<DetalleFactura> index() {
-		
-		
 		
 		return dfr.findAll();
 	}	
 	
-/*	
 	
 
+	@GetMapping("/factura1/totalventas")
+	public List<DetalleFactura> index1() {
+		
+		return dfr.findAll();
+	}	
+	
+	/*@GetMapping("producto")
+	public List<Producto> index3() {
+		return ppr.findAll();
+	}
+	
 	@GetMapping("/factura2")
 	public List<FacturaCabecera> index1() {
 		return fcr.findAll();
